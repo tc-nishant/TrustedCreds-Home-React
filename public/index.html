@@ -2,7 +2,7 @@
 
 <html lang="en">
   <head>
-    <title>TrustedCreds Home</title>
+    <title>TrustedCreds</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
@@ -56,6 +56,15 @@
          box-shadow:0 -100vh 0 100vh #5128f5;//magic
        }
     </style>
+    <style data-section-id="dropdown">
+      [data-thq="thq-dropdown"]:hover > [data-thq="thq-dropdown-list"] {
+          display: flex;
+        }
+
+        [data-thq="thq-dropdown"]:hover > div [data-thq="thq-dropdown-arrow"] {
+          transform: rotate(90deg);
+        }
+    </style>
   </head>
   <body>
     <div id="app"></div>
@@ -72,5 +81,9 @@
     </script>
     <!-- Your body code here -->
     <!-- <script type="text/javascript"> ... </script> -->
+    <script
+      data-section-id="navbar"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
   </body>
 </html>
